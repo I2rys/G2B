@@ -77,23 +77,22 @@ G2B.start = async function(){
 }
 
 //Main
-if(Self_Args.length == 0){
-    console.log(`node index.js <email/username> <password> <dictionary>
-Example: Above me.`)
+if(!Self_Args.length){
+    console.log("node index.js <email/username> <password> <dictionary>")
     process.exit()
 }
 
-if(Self_Args[0] == ""){
+if(!Self_Args[0]){
     console.log("Invalid email/username.")
     process.exit()
 }
 
-if(Self_Args[1] == ""){
+if(!Self_Args[1]){
     console.log("Invalid password.")
     process.exit()
 }
 
-if(Self_Args[2] == ""){
+if(!Self_Args[2]){
     console.log("Invalid dictionary.")
     process.exit()
 }
